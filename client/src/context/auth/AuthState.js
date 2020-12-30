@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import {v4 as uuid} from 'uuid';
-import AuthContext from './AuthContext';
+import AuthContext from './authContext';
 import authReducer from './authReducer';
 import {
     REGISTER_SUCCESS,
@@ -12,7 +12,6 @@ import {
     LOGOUT,
     CLEAR_ERRORS
 } from '../types';
-import contactContext from './contactContext';
 
 const AuthState = props => {
     const initialState = {
